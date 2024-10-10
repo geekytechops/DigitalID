@@ -70,3 +70,16 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
 13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 15 SYSTEMPATH\rewrite.php(44): require_once('D:\\wamp64\\www\\work\\DigitalID\\public\\index.php')
+CRITICAL - 2024-10-09 06:25:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homepage-template1.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homepage-template1.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('homepage-template1', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('homepage-template1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\wamp64\\www\\work\\DigitalID\\public\\index.php')
