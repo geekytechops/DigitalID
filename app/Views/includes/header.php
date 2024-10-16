@@ -604,9 +604,9 @@
                     <li><a href="page-faq.html">Faq</a></li>
                     <li><a href="page-help.html">Help</a></li>
                     <li><a href="page-invoice.html">Invoices</a></li>
-                    <li><a href="page-login.html">Login</a></li>
+                    <li><a href="/login">Login</a></li>
                     <li><a href="page-pricing.html">Pricing</a></li>
-                    <li><a href="page-register.html">Register</a></li>
+                    <li><a href="/register">Register</a></li>
                     <li><a href="page-terms.html">Terms</a></li>
                     <li><a href="page-ui-element.html">UI Elements</a></li>
                   </ul>
@@ -615,8 +615,8 @@
               </ul>
               <a class="login-info bdrl1 pl15-lg pl30" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><span class="flaticon-loupe"></span></a>
               <a class="login-info mx15-lg mx30" href="page-become-seller.html"><span class="d-none d-xl-inline-block">Become a</span> Seller</a>
-              <a class="login-info mr15-lg mr30" href="page-login.html">Sign in</a>
-              <a class="ud-btn btn-thm add-joining" href="page-register.html">Join</a>
+              <a class="login-info mr15-lg mr30" href="/login">Sign in</a>
+              <a class="ud-btn btn-thm add-joining" href="/register">Join</a>
             </div>
           </div>
         </div>

@@ -6,8 +6,8 @@
           <div class="col-auto px-0 px-xl-3">
             <div class="d-flex align-items-center justify-content-between">
               <div class="logos">
-                <a class="header-logo logo1" href="index.html"><img src="images/header-logo.svg" alt="Header Logo"></a>
-                <a class="header-logo logo2" href="index.html"><img src="images/header-logo2.svg" alt="Header Logo"></a>
+                <a class="header-logo logo1" href="index.html"><img src="<?= base_url('assets/images/header-logo.svg')?>" alt="Header Logo"></a>
+                <a class="header-logo logo2" href="index.html"><img src="<?=base_url('assets/images/header-logo2.svg')?>" alt="Header Logo"></a>
               </div>
               <div class="home1_style at-home2">
                 <div id="mega-menu">
@@ -602,9 +602,9 @@
                     <li><a href="page-faq.html">Faq</a></li>
                     <li><a href="page-help.html">Help</a></li>
                     <li><a href="page-invoice.html">Invoices</a></li>
-                    <li><a href="page-login.html">Login</a></li>
+                    <li><a href="/login">Login</a></li>
                     <li><a href="page-pricing.html">Pricing</a></li>
-                    <li><a href="page-register.html">Register</a></li>
+                    <li><a href="/register">Register</a></li>
                     <li><a href="page-terms.html">Terms</a></li>
                     <li><a href="page-ui-element.html">UI Elements</a></li>
                   </ul>
@@ -617,8 +617,8 @@
             <div class="d-flex align-items-center">
               <a class="login-info" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><span class="flaticon-loupe"></span></a>
               <a class="login-info mx15-xl mx30" href="page-become-seller.html"><span class="d-none d-xl-inline-block">Become a</span> Seller</a>
-              <a class="login-info mr15-xl mr30" href="page-login.html">Sign in</a>
-              <a class="ud-btn btn-white add-joining bdrs50 text-thm2" href="page-register.html">Join</a>
+              <a class="login-info mr15-xl mr30" href="/login">Sign in</a>
+              <a class="ud-btn btn-white add-joining bdrs50 text-thm2" href="/register">Join</a>
             </div>
           </div>
         </div>

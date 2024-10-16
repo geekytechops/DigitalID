@@ -16,9 +16,11 @@
 <link rel="stylesheet" href="<?= base_url('assets/css/animate.css') ?>">
 <link rel="stylesheet" href="<?= base_url('assets/css/jquery-ui.min.css') ?>">
 <link rel="stylesheet" href="<?= base_url('assets/css/slider.css')?>">
-<link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>"><link rel="stylesheet" href="<?= base_url('assets/css/ud-custom-spacing.css') ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/dashbord_navitaion.css') ?>">
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css') ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/app.min.css') ?>">
 
 <!-- Title -->
 <title>Freeio - Freelance Marketplace HTML Template</title>

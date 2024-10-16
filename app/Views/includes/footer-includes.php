@@ -12,5 +12,6 @@
 <script src="<?= base_url('assets/js/owl.js')?>"></script>
 <script src="<?= base_url('assets/js/jquery.counterup.js')?>"></script>
 <script src="<?= base_url('assets/js/pricing-table.js')?>"></script>
+<script src="<?= base_url('assetsjs/dashboard-script.js') ?>"></script>
 <!-- Custom script for all pages -->
 <script src="<?= base_url('assets/js/script.js')?>"></script>

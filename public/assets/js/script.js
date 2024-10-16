@@ -410,3 +410,8 @@
 
 
 })(window.jQuery);
+
+$('input').focus(function(){
+  $(this).parent('div').find('.error-message').hide();
+  $(this).removeClass('invalid-feed');
+})
