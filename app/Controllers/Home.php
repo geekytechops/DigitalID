@@ -22,6 +22,12 @@ class Home extends BaseController
 
     public function dashboard(): string
     {
-        return view('dashboard');
+        $data['pageTitle'] = "Dashboard"; 
+        return view('dashboard',$data);
+    }
+    public function users(): string
+    {
+        $data['pageTitle'] = "Users"; 
+        return view('users',$data);
     }
 }

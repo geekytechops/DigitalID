@@ -9,4 +9,5 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'Home::login');
 $routes->get('/register', 'Home::register');
 $routes->get('/admin/dashboard', 'Home::dashboard');
+$routes->get('/admin/users', 'Home::users');
 $routes->post('/login_validate', 'UserController::loginValidate');
