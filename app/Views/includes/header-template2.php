@@ -6,8 +6,8 @@
           <div class="col-auto px-0 px-xl-3">
             <div class="d-flex align-items-center justify-content-between">
               <div class="logos">
-                <a class="header-logo logo1" href="index.html"><img src="<?= base_url('assets/images/header-logo.svg')?>" alt="Header Logo"></a>
-                <a class="header-logo logo2" href="index.html"><img src="<?=base_url('assets/images/header-logo2.svg')?>" alt="Header Logo"></a>
+                <a class="header-logo logo1" href="index.html"><img src="<?= base_url('assets/images/header-logo.jpg')?>" alt="Header Logo"></a>
+                <a class="header-logo logo2" href="index.html"><img src="<?=base_url('assets/images/header-logo2.jpg')?>" alt="Header Logo"></a>
               </div>
               <div class="home1_style at-home2">
                 <div id="mega-menu">

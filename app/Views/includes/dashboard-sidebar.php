@@ -6,6 +6,6 @@
           </div>
           <div class="sidebar_list_item">
             <a href="users" class="items-center"><i class="fa-light fa-users mr15"></i>Users</a>
-          </div>        
+          </div>         
         </div>
       </div>

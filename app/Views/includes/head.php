@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="<?= base_url('assets/css/app.min.css') ?>">
 
 <!-- Title -->
-<title>Freeio - Freelance Marketplace HTML Template</title>
+<title>Digital ID</title>
 <!-- Favicon -->
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
