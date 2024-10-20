@@ -111,51 +111,46 @@
                         </div> <!-- end row -->
 
                         <script>
-                           function getTableData(tableName , tableType) {        
-        if ($.fn.DataTable.isDataTable("#" + tableName)) {
-            $("#" + tableName).DataTable().destroy();
-        }
-        $("#" + tableName).DataTable({
-            ajax: {
-                url: '/fetchUsers', 
-                type: 'GET',
-                dataSrc: 'data',
-                data: function(d) {
-                    d.tableType = tableType; 
-                }
-            },
-            "ordering": true,
-            order: [],
-            columns: [
-                { data: 'name', responsivePriority: 2 },        
-                { data: 'username', responsivePriority: 0 }, 
-                { data: 'email', responsivePriority: 2 },    
-                { data: 'phone_number', responsivePriority: 2 },
-                { data: 'status', responsivePriority: 1 },  
-                { data: 'role', responsivePriority: 0 },    
-            ],
-            language: {
-                paginate: {
-                    previous: "<i class='mdi mdi-chevron-left'></i>",
-                    next: "<i class='mdi mdi-chevron-right'></i>"
-                }
-            },
-            scrollX: true, 
-            responsive: true, 
-            autoWidth: false,   
-            drawCallback: function() {
-                console.log(tableType);
+                function getTableData(tableName, tableType) {
+                      const tableElement = $("#" + tableName);
 
-            }
-        });
+                      if ($.fn.DataTable.isDataTable(tableElement)) {
+                          tableElement.DataTable().clear().destroy(); 
+                      }
 
-        $('#' + tableName + ' tbody').on('click', 'tr', function() {
-        $('#' + tableName + ' tr').removeClass('highlight');
-        
-        $(this).addClass('highlight');
-    });
-        
-    }
+                      tableElement.DataTable({
+                          ajax: {
+                              url: '/fetchUsers',
+                              type: 'GET',
+                              dataSrc: 'data',
+                              data: function (d) {
+                                  d.tableType = tableType;
+                              }
+                          },
+                          ordering: true,
+                          order: [],
+                          columns: [
+                              { data: 'name' },
+                              { data: 'username' },
+                              { data: 'email' },
+                              { data: 'phone_number' },
+                              { data: 'status' },
+                              { data: 'role'}
+                          ],
+                          language: {
+                              paginate: {
+                                  previous: "<i class='mdi mdi-chevron-left'></i>",
+                                  next: "<i class='mdi mdi-chevron-right'></i>"
+                              }
+                          },
+                          // scrollX: true,
+                          // responsive: true,
+                          // autoWidth: false,
+                          drawCallback: function () {
+                              console.log(`Table type: ${tableType}`);
+                          }
+                      });
+                  }   
 
 getTableData('datatable-users','pending');
 
