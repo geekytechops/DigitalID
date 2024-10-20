@@ -16,8 +16,10 @@ class UserController extends BaseController
 
 
     public function fetchUsers(){
-
-        $users = $this->UserModel->findAll();
+        $loggedInUserId =   session()->get('user_id'); 
+        $users = $this->UserModel->where('role !=', 'superadmin')
+        ->where('id !=', $loggedInUserId) 
+        ->findAll();
         if (!empty($users)) {
             $formattedUsers = array_map(function ($user) {
                 return [
