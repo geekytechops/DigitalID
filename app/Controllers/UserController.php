@@ -122,7 +122,7 @@ class UserController extends BaseController
         'id' => $result[0]->id,
         'email' => $result[0]->email,
         'username' => $result[0]->username,
-        'logged_in' => TRUE,
+        'isLoggedIn' => TRUE,
     ];
     
     // Save to session

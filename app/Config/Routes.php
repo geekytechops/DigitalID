@@ -8,8 +8,12 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'Home::login');
 $routes->get('/register', 'Home::register');
-$routes->get('/admin/dashboard', 'Home::dashboard');
-$routes->get('/admin/users', 'Home::users');
 $routes->post('/login_validate', 'UserController::loginValidate');
 $routes->post('/addUser', 'UserController::addUser');
 $routes->get('/fetchUsers', 'UserController::fetchUsers');
+
+
+$routes->group('admin', ['filter' => 'auth'], function($routes) {
+    $routes->get('dashboard', 'Home::dashboard');
+    $routes->get('users', 'Home::users');
+});

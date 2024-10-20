@@ -6,7 +6,7 @@
           <div class="col-6 col-lg-auto">
             <div class="text-center text-lg-start d-flex align-items-center">
               <div class="dashboard_header_logo position-relative me-2 me-xl-5">
-                <a href="index.html" class="logo"><img src="<?= base_url('assets/images/header-logo-dark.png') ?>" style="width: 115px;height: 85px;" alt=""></a>
+                <a href="index.html" class="logo"><img src="<?= base_url('assets/images/header-logo-dark.png') ?>" style="width: 100px;height: 70px;" alt=""></a>
               </div>
               <div class="fz20 ml90">
                 <a href="#" class="dashboard_sidebar_toggle_icon vam"><img src="<?= base_url('assets/images/dashboard-navicon.svg') ?>" alt=""></a>
@@ -26,7 +26,7 @@
                 <li class="user_setting">
                   <div class="dropdown">
                     <a class="btn" href="#" data-bs-toggle="dropdown">
-                      <img src="<?= base_url('assets/images/resource/user.png') ?>" alt="user.png"> 
+                      <img src="<?= base_url('assets/images/default_user.png') ?>" alt="user.png" width="50" height="50"> 
                     </a>
                     <div class="dropdown-menu">
                       <div class="user_setting_content">                        

@@ -11,7 +11,6 @@
 <script src="<?= base_url('assets/js/wow.min.js')?>"></script>
 <script src="<?= base_url('assets/js/owl.js')?>"></script>
 <script src="<?= base_url('assets/js/jquery.counterup.js')?>"></script>
-<script src="<?= base_url('assets/libs/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
 <script src="<?= base_url('assets/js/pricing-table.js')?>"></script>
 <script src="<?= base_url('assets/js/dashboard-script.js') ?>"></script>
 <!-- Custom script for all pages -->
