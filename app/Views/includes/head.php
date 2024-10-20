@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="<?= base_url('assets/css/flaticon.css') ?>">
 <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap-select.min.css') ?>">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+<link href="https://cdn.materialdesignicons.com/7.0.96/css/materialdesignicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="<?= base_url('assets/css/ud-custom-spacing.css') ?>">
 <link rel="stylesheet" href="<?= base_url('assets/css/animate.css') ?>">
 <link rel="stylesheet" href="<?= base_url('assets/css/jquery-ui.min.css') ?>">

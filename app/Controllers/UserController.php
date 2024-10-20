@@ -14,6 +14,74 @@ class UserController extends BaseController
         $this->session = session();
     }
 
+
+    public function fetchUsers(){
+
+        $users = $this->UserModel->findAll();
+        if (!empty($users)) {
+            $formattedUsers = array_map(function ($user) {
+                return [
+                    'name' => $user['first_name'] . ' ' . $user['last_name'],
+                    'username' => $user['username'],
+                    'email' => $user['email'],
+                    'phone_number' => $user['phone_number'],
+                    'status' => $user['status'],
+                    'role' => $user['role']
+                ];
+            }, $users);
+    
+            return $this->response->setJSON([
+                'status' => 'success',
+                'data' => $formattedUsers
+            ]);
+        } else {
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'No users found.'
+            ]);
+        }
+
+    }
+
+
+    public function addUser(){
+        $firstName = $this->request->getVar('firstName');
+        $lastName = $this->request->getVar('lastName');
+        $username = $this->request->getVar('username');
+        $role = $this->request->getVar('role');
+        $status = $this->request->getVar('status');
+        $phone = $this->request->getVar('phone');
+        $email = $this->request->getVar('email');
+        $password = password_hash($this->request->getVar('password'), PASSWORD_DEFAULT);
+
+        $data = [
+            'first_name' => $firstName,
+            'last_name'  => $lastName,
+            'username'  => $username,
+            'password'  => $password,
+            'email'     => $email,
+            'role'      => $role,
+            'status'    => $status,
+            'phone_number'     => $phone,
+        ];
+
+        if ($this->UserModel->insert($data)) {
+            $data = [
+                'status'  => 'success',
+                'message' => 'User Created Successfully'
+            ];
+            
+        } else {
+            $data = [
+                'status'  => 'fail',
+                'message' => 'Error in User Creation'
+            ];
+        }
+        return $this->response->setJSON($data);
+
+    }
+
+
     public function loginValidate()
     {
         $email = $this->request->getVar('email');

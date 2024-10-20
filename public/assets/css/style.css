@@ -12452,3 +12452,11 @@ hr {
   font-size: 13px;
   text-align: center;
 }
+
+.toast-success{
+	position: fixed;
+    z-index: 9999;
+    /* right: 2rem; */
+	left: 100%;
+    top: 2rem;
+}
