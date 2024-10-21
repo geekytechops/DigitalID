@@ -12460,3 +12460,17 @@ hr {
 	left: 100%;
     top: 2rem;
 }
+
+.id-side-title{
+  font-size: 13px;
+}
+
+.id-side{
+  
+}
+
+.id-details{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

@@ -118,7 +118,7 @@
                   $('#password').addClass('valid-feed');
                   $('#emailError').hide();
 
-                  window.location.href = '/admin/dashboard';
+                  window.location.href = '/myAccount/dashboard';
 
               }
             }

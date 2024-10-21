@@ -13,7 +13,8 @@ $routes->post('/addUser', 'UserController::addUser');
 $routes->get('/fetchUsers', 'UserController::fetchUsers');
 
 
-$routes->group('admin', ['filter' => 'auth'], function($routes) {
+$routes->group('myAccount', ['filter' => 'auth'], function($routes) {
     $routes->get('dashboard', 'Home::dashboard');
     $routes->get('users', 'Home::users');
+    $routes->get('profile', 'Home::profile');
 });

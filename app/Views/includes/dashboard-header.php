@@ -31,7 +31,7 @@
                     <div class="dropdown-menu">
                       <div class="user_setting_content">                        
                         <p class="fz15 fw400 ff-heading mt30 pl30">Account</p>
-                        <a class="dropdown-item" href="page-dashboard-profile.html"><i class="flaticon-photo mr10"></i>My Profile</a>
+                        <a class="dropdown-item" href="profile"><i class="flaticon-photo mr10"></i>My Profile</a>
                         <a class="dropdown-item" href="page-login.html"><i class="flaticon-logout mr10"></i>Logout</a>
                       </div>
                     </div>
