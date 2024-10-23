@@ -6,7 +6,7 @@
         <div class="row align-items-center justify-content-between">
           <div class="col-auto pe-0">
             <div class="d-flex align-items-center">
-              <a class="header-logo bdrr1 pr30 pr5-xl" href="index.html"><img src="images/header-logo-dark.svg" alt="Header Logo"></a>              
+              <a class="header-logo bdrr1 pr30 pr5-xl" href="/"><img src="<?= base_url('assets/images/header-logo-dark.jpg')?>" style="width: 180px;height: 70px;" alt="Header Logo"></a>              
             </div>
           </div>
           <div class="col-auto">

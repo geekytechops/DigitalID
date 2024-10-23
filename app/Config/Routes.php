@@ -11,6 +11,7 @@ $routes->get('/register', 'Home::register');
 $routes->post('/login_validate', 'UserController::loginValidate');
 $routes->post('/addUser', 'UserController::addUser');
 $routes->get('/fetchUsers', 'UserController::fetchUsers');
+$routes->get('/logout', 'UserController::logout');
 
 
 $routes->group('myAccount', ['filter' => 'auth'], function($routes) {

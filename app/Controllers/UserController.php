@@ -84,6 +84,18 @@ class UserController extends BaseController
     }
 
 
+    public function logout()
+    {
+    
+        $session = session();
+
+        $session->destroy();
+
+        return redirect()->to('/login');
+    
+    }
+
+
     public function loginValidate()
     {
         $email = $this->request->getVar('email');

@@ -18,7 +18,7 @@
                   <label><span class="flaticon-loupe"></span></label>
                 </div>
               </div>
-            </div>
+            </div>    
           </div>
           <div class="col-6 col-lg-auto">
             <div class="text-center text-lg-end header_right_widgets">
@@ -32,7 +32,7 @@
                       <div class="user_setting_content">                        
                         <p class="fz15 fw400 ff-heading mt30 pl30">Account</p>
                         <a class="dropdown-item" href="profile"><i class="flaticon-photo mr10"></i>My Profile</a>
-                        <a class="dropdown-item" href="page-login.html"><i class="flaticon-logout mr10"></i>Logout</a>
+                        <a class="dropdown-item" href="/login"><i class="flaticon-logout mr10"></i>Logout</a>
                       </div>
                     </div>
                   </div>
