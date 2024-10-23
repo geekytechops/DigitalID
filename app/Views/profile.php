@@ -68,6 +68,9 @@
                     <label for="pincode">Picnode</label>
                     <input type="text" id="pincode" name="pincode" class="form-control">
                   </div>
+                  <div class="col-sm-4 col-xxl-12 mt-2">                    
+                    <input type="button" id="update_profile" name="update_profile" class="ud-btn btn-dark" value="Update Profile">
+                  </div>
               </div>
             </div>     
             <div class="col-sm-6 col-xxl-3">

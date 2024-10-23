@@ -40,30 +40,7 @@
     <!-- /.mobile-menu -->
     <nav id="menu" class="">
       <ul>
-        <li><span>Home</span>
-          <ul>
-            <li><a href="index.html">Home V1</a></li>
-            <li><a href="index2.html">Home V2</a></li>
-            <li><a href="index3.html">Home V3</a></li>
-            <li><a href="index4.html">Home V4</a></li>
-            <li><a href="index5.html">Home V5</a></li>
-            <li><a href="index6.html">Home V6</a></li>
-            <li><a href="index7.html">Home V7</a></li>
-            <li><a href="index8.html">Home V8</a></li>
-            <li><a href="index9.html">Home V9</a></li>
-            <li><a href="index10.html">Home V10</a></li>
-            <li><a href="index11.html">Home V11</a></li>
-            <li><a href="index12.html">Home V12</a></li>
-            <li><a href="index13.html">Home V13</a></li>
-            <li><a href="index14.html">Home V14</a></li>
-            <li><a href="index15.html">Home V15</a></li>
-            <li><a href="index16.html">Home V16</a></li>
-            <li><a href="index17.html">Home V17</a></li>
-            <li><a href="index18.html">Home V18</a></li>
-            <li><a href="index19.html">Home V19</a></li>
-            <li><a href="index20.html">Home V20</a></li>
-          </ul>
-        </li>
+        <li><span>Home</span></li>
         <li><span>Browse Jobs</span>
           <ul>
             <li><span>Services</span>

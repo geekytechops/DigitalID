@@ -6,7 +6,7 @@
           <div class="col-6 col-lg-auto">
             <div class="text-center text-lg-start d-flex align-items-center">
               <div class="dashboard_header_logo position-relative me-2 me-xl-5">
-                <a href="index.html" class="logo"><img src="<?= base_url('assets/images/header-logo-dark.png') ?>" style="width: 100px;height: 70px;" alt=""></a>
+                <a href="index.html" class="logo"><img src="<?= base_url('assets/images/header-logo-dark.jpg') ?>" style="width: 180px;height: 70px;" alt=""></a>
               </div>
               <div class="fz20 ml90">
                 <a href="#" class="dashboard_sidebar_toggle_icon vam"><img src="<?= base_url('assets/images/dashboard-navicon.svg') ?>" alt=""></a>
