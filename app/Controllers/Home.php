@@ -30,8 +30,4 @@ class Home extends BaseController
         return view('users');
     }
 
-    public function profile(): string
-    { 
-        return view('profile');
-    }
 }

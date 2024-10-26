@@ -10,8 +10,14 @@ $lastSegment = basename(parse_url($url, PHP_URL_PATH));
     <div class="sidebar_list_item">
       <a href="dashboard" class="items-center <?= $lastSegment=='dashboard' ? '-is-active' : '' ?>"><i class="flaticon-home mr15"></i>Dashboard</a>
     </div>
+    <?php 
+    
+    if(session()->get('type')== 'superadmin' || session()->get('type')== 'admin'){
+
+    ?>
     <div class="sidebar_list_item">
       <a href="users" class="items-center <?= $lastSegment=='users' ? '-is-active' : '' ?>"><i class="fa-light fa-users mr15"></i>Users</a>
-    </div>         
+    </div>        
+    <?php } ?> 
   </div>
 </div>

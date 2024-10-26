@@ -16,11 +16,11 @@ class UserController extends BaseController
 
 
     public function fetchUsers(){
-        $loggedInUserId =   session()->get('user_id'); 
+        $loggedInUserId =   session()->get('id'); 
         $users = $this->UserModel->where('role !=', 'superadmin')
         ->where('id !=', $loggedInUserId) 
         ->findAll();
-        if (!empty($users)) {
+        if (!empty($users)) {   
             $formattedUsers = array_map(function ($user) {
                 return [
                     'name' => $user['first_name'] . ' ' . $user['last_name'],
@@ -84,6 +84,50 @@ class UserController extends BaseController
     }
 
 
+    public function fileUpload()
+    {
+
+        if (isset($_FILES['image'])) {
+            $file = $_FILES['image'];
+            
+            if ($file['error'] !== UPLOAD_ERR_OK) {
+                echo json_encode(['status' => 'error', 'message' => 'File upload error.']);
+                return;
+            }
+    
+            
+            $fileExtension = pathinfo($file['name'], PATHINFO_EXTENSION);
+            $fileName = uniqid() . '.' . $fileExtension;
+    
+            
+            if (in_array($fileExtension, ['jpg', 'jpeg', 'png', 'gif'])) {
+                $uploadDir = ROOTPATH . 'public/uploads/images/';
+                $urlPath = 'uploads/images/';
+            } else {
+                $uploadDir = ROOTPATH . 'public/uploads/documents/';
+                $urlPath = 'uploads/documents/';
+            }
+    
+            
+            if (!is_dir($uploadDir)) {
+                mkdir($uploadDir, 0777, true);
+            }
+                
+            $destination = $uploadDir . $fileName;
+            if (move_uploaded_file($file['tmp_name'], $destination)) {
+                $data = ['status' => 'success', 'message' => 'File uploaded successfully.', 'path' => base_url($urlPath . $fileName)];                        
+            } else {
+                $data = ['status' => 'error', 'message' => 'Failed to move uploaded file.'];                
+            }
+
+            return $this->response->setJSON($data);        
+        } else {
+            $data = ['status' => 'error', 'message' => 'No file uploaded.'];  
+            return $this->response->setJSON($data);                    
+        }
+
+    }
+
     public function logout()
     {
     
@@ -134,6 +178,7 @@ class UserController extends BaseController
         'id' => $result[0]->id,
         'email' => $result[0]->email,
         'username' => $result[0]->username,
+        'type' => $result[0]->role,
         'isLoggedIn' => TRUE,
     ];
     
@@ -151,4 +196,89 @@ class UserController extends BaseController
             return $this->response->setJSON($data);
         }
     }
+
+    public function profile()
+    {
+
+        $userId = session()->get('id');
+        $user = $this->UserModel->find($userId);        
+        if ($user) {
+            $data = [
+                'status' => 'success',
+                'user'   => [
+                    'first_name'   => $user['first_name'],
+                    'last_name'    => $user['last_name'],
+                    'username'     => $user['username'],
+                    'email'        => $user['email'],
+                    'role'         => $user['role'],
+                    'profile_picture'=> $user['profile_picture'],
+                    'status'       => $user['status'],
+                    'phone_number' => $user['phone_number'],
+                    'state' => $user['state'],
+                    'city' => $user['city'],
+                    'pincode' => $user['zip_code'],
+                    'address' => $user['address']
+                ]
+            ];
+        } else {
+            $data = [
+                'status'  => 'fail',
+                'message' => 'User not found'
+            ];
+        }
+
+            return view('profile' , $data);
+    }
+
+
+    public function updateProfile()
+    {
+        $userId = session()->get('id'); 
+        
+        if (!$userId) {
+            return $this->response->setJSON([
+                'status'  => 'fail',
+                'message' => 'User ID not found in session'
+            ]);
+        }
+    
+        $firstName = $this->request->getVar('firstName');
+        $lastName = $this->request->getVar('lastName');
+        $address = $this->request->getVar('address');
+        $phone = $this->request->getVar('phone');
+        $email = $this->request->getVar('email');
+        $profile_picture = $this->request->getVar('profile_picture_path');
+        $state = $this->request->getVar('state');
+        $city = $this->request->getVar('city');
+        $pincode = $this->request->getVar('pincode');
+    
+        $data = [
+            'first_name'   => $firstName,
+            'last_name'    => $lastName,
+            'email'        => $email,
+            'phone_number' => $phone,
+            'state'        => $state,
+            'profile_picture'=> $profile_picture,
+            'city'         => $city,
+            'zip_code'     => $pincode,
+            'address'      => $address,
+        ];
+            
+        if ($this->UserModel->where('id', $userId)->set($data)->update()) {
+            $response = [
+                'status'  => 'success',
+                'message' => 'Profile Updated Successfully'
+            ];
+        } else {
+            $response = [
+                'status'  => 'fail',
+                'message' => 'Error in User Updating'
+            ];
+        }
+    
+        return $this->response->setJSON($response);
+    }
+    
+    
+
 }
