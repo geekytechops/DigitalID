@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
     <!-- Our LogIn Area -->
-    <section class="our-login">
+    <section class="our-login login-head">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
