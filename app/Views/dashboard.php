@@ -17,7 +17,7 @@
                 <div class="details">
                   <div class="fz15">Services Offered</div>
                   <div class="title">25</div>
-                  <div class="text fz14"><span class="text-thm">10</span> New Offered</div>
+                  <div class="text fz14"><span class="text-thm">10</span> New Offers</div>
                 </div>
                 <div class="icon text-center"><i class="flaticon-contract"></i></div>
               </div>
