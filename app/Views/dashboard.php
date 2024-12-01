@@ -6,7 +6,8 @@
     <div class="row align-items-center justify-content-between pb40">
                           <div class="col-lg-6">
                             <div class="dashboard_title_area">
-                              <h2>Dashboard</h2>
+           
+                            <h2>Dashboard</h2>
                               <p class="text">You can see the report and stats here. This is testing purpose.</p>
                             </div>
                           </div>
