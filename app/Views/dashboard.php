@@ -15,7 +15,7 @@
             <div class="col-sm-6 col-xxl-3">
               <div class="d-flex align-items-center justify-content-between statistics_funfact">
                 <div class="details">
-                  <div class="fz15">Services Offered</div>
+                  <div class="fz15">Services Offers</div>
                   <div class="title">25</div>
                   <div class="text fz14"><span class="text-thm">10</span> New Offers</div>
                 </div>
@@ -35,7 +35,7 @@
             <div class="col-sm-6 col-xxl-3">
               <div class="d-flex align-items-center justify-content-between statistics_funfact">
                 <div class="details">
-                  <div class="fz15">in Queue Services</div>
+                  <div class="fz15">in Queue Services new</div>
                   <div class="title">182</div>
                   <div class="text fz14"><span class="text-thm">35+</span> New Queue</div>
                 </div>
