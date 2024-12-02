@@ -7,7 +7,7 @@
                           <div class="col-lg-6">
                             <div class="dashboard_title_area">
                               <h2>Dashboard</h2>
-                              <p class="text">You can see the report and stats here.</p>
+                              <p class="text">You can see the report and stats here...</p>
                             </div>
                           </div>
                         </div>
