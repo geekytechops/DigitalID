@@ -7,7 +7,7 @@
         <div class="col-lg-6">
           <div class="dashboard_title_area">
             <h2>Profile</h2>
-            <p class="text">You can see and edit you account details here</p>
+            <p class="text">You can see and edit you account details here. testing</p>
           </div>
         </div>
       </div>
