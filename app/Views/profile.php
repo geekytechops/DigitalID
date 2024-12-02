@@ -44,7 +44,7 @@
                         <div class="col-sm-4 col-xxl-12">
                           <div class="card p-4 shadow-sm">
                             <div class="profile-pic-wrapper text-center mb-3">
-                              <div class="profile-pic rounded-circle overflow-hidden mx-auto">
+                              <div class="profile-pic rounded-circle overflow-hidden mx-auto testing-class">
                                 <img id="profileImage" 
                                     src="<?=$user['profile_picture'] == '' ? base_url('assets/images/default_user.png') :$user['profile_picture']  ?>" 
                                     alt="Profile Picture" 
