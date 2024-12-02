@@ -39,6 +39,7 @@
                   <div class="title">182</div>
                   <div class="text fz14"><span class="text-thm">35+</span> New Queue</div>
                 </div>
+                <div>This is new line</div>
                 <div class="icon text-center"><i class="flaticon-review"></i></div>
               </div>
             </div>
