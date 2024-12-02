@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
   
     <!-- Our LogIn Area -->
-    <div class="row align-items-center justify-content-between pb40">
+    <div class="row align-items-center justify-content-between pb40 testing">
         <div class="col-lg-6">
           <div class="dashboard_title_area">
             <h2>Profile</h2>
